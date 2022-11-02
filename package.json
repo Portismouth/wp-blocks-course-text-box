@@ -20,7 +20,10 @@
 		"extends": "@wordpress/stylelint-config/scss"
 	},
 	"lint-staged": {
-		"*.js": ["wp-scripts lint-js", "wp-scripts format"],
+		"*.js": [
+			"wp-scripts lint-js",
+			"wp-scripts format"
+		],
 		"*.scss": "npx stylelint --fix"
 	},
 	"devDependencies": {
@@ -32,5 +35,8 @@
 		"husky": "^8.0.1",
 		"lint-staged": "^13.0.3",
 		"stylelint": "^14.14.0"
+	},
+	"dependencies": {
+		"@wordpress/components": "^21.2.0"
 	}
 }
